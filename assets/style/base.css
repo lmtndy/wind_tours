@@ -1,0 +1,173 @@
+:root {
+    --primary-color: #3fd0d4;
+    --text-color: #212121;
+    --white-color: #fff;
+    --black-color: #000;
+
+    --header-height: 46px;
+    --slider-img-height: 
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* responsive */
+.grid {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.grid__column-half {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+}
+
+.grid__column-full {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.grid__column-2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 25%;
+}
+
+
+.grid__column-6-10 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 55.615%;
+}
+
+.grid__column-4-10 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 26.846%;
+}
+
+/* common */
+.text-center {
+    text-align: center !important;
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    transition: color ease 0.3s;
+    transition: background-color ease 0.3s;
+}
+
+.section__content-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.section__content {
+    
+}
+
+.section__heading {
+    font-size: 4rem;
+    line-height: 4rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.section__heading.section__heading--size-l {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.section__sub-heading {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.section__description {
+    margin-top: 15px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #505050;
+}
+
+
+/* hover effect */
+.underline {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    border-bottom: 3px solid currentColor;
+}
+
+/* animation */
+@keyframes underlineMove {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        height: 0;
+        opacity: 0.9;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes reverse {
+    to {
+        height: 0;
+    }
+}
