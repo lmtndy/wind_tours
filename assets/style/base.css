@@ -58,19 +58,6 @@ html {
     width: 25%;
 }
 
-
-.grid__column-6-10 {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 55.615%;
-}
-
-.grid__column-4-10 {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 26.846%;
-}
-
 /* common */
 .text-center {
     text-align: center !important;
@@ -91,15 +78,6 @@ html {
     background-color: var(--primary-color);
     transition: color ease 0.3s;
     transition: background-color ease 0.3s;
-}
-
-.section__content-wrap {
-    display: flex;
-    justify-content: center;
-}
-
-.section__content {
-    
 }
 
 .section__heading {

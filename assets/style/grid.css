@@ -243,8 +243,10 @@
     .l-2,
     .l-3,
     .l-4,
+    .l-4-10,
     .l-5,
     .l-6,
+    .l-6-10,
     .l-7,
     .l-8,
     .l-9,
@@ -269,6 +271,10 @@
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
+    .l-4-10 {
+        flex: 0 0 28.11%;
+        max-width: 28.11%;
+    }
     .l-5 {
         flex: 0 0 41.66667%;
         max-width: 41.66667%;
@@ -276,6 +282,10 @@
     .l-6 {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    .l-6-10 {
+        flex: 0 0 56.615%;
+        max-width: 56.615%;
     }
     .l-7 {
         flex: 0 0 58.33333%;
@@ -340,7 +350,7 @@
 /* Tablet - PC low resolution */
 @media (min-width: 740px) and (max-width: 1023px) {
     .wide {
-        width: 644px;
+        width: 600px;
     }
 }
 
@@ -364,8 +374,10 @@
     .wide .l-2,
     .wide .l-3,
     .wide .l-4,
+    .wide .l-4-10,
     .wide .l-5,
     .wide .l-6,
+    .wide .l-6-10,
     .wide .l-7,
     .wide .l-8,
     .wide .l-9,
@@ -390,6 +402,10 @@
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
+    .wide .l-4-10 {
+        flex: 0 0 28.11%;
+        max-width: 28.11%;
+    }
     .wide .l-5 {
         flex: 0 0 41.66667%;
         max-width: 41.66667%;
@@ -397,6 +413,10 @@
     .wide .l-6 {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    .wide .l-6-10 {
+        flex: 0 0 56.615%;
+        max-width: 56.615%;
     }
     .wide .l-7 {
         flex: 0 0 58.33333%;

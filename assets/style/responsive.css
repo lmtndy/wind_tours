@@ -7,20 +7,101 @@
         --header-height: 69px;
     }
     .header {
+        position: fixed;
         background-color: var(--primary-color);
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .header-wrap {
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .container__navbar {
+        padding: 0 calc((100% - 600px) / 2);
+        position: fixed;
+        top: var(--header-height);
+        z-index: 1;
+        background-color: #fff;
+    }
+    .header__menu {
+        display: block;
+    }
+    .header__menu-checked:checked ~ .navbar__list {
+        display: flex;
+    }
+    .header__logo {
+        display: block;
+    }
+    .navbar__list {
+        position: relative;
+        display: none;
+        flex-direction: column;
+    }
+    .navbar__item {
+        padding: 0;
+    }
+    .navbar__link {
+        display: block;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 14px 0;
+        margin: 0;
+    }
+    .navbar__item:hover .item-heading__list {
+        display: none;
+    }
+    .navbar__link-icon {
+        display: block;
+    }
+    .item-heading__list {
+        position: relative;
+        width: unset;
+        left: 0;
+    }
+    .item-heading__link {
+        padding: 12px 16px;
+    }
+    .item-heading__list:before {
+        display: none;
+    }
+    .item-heading__list:after {
+        display: none;
+    }
+    .item-heading__link:after {
+        content: "";
+        position: absolute;
+        top: 96%;
+        left: 16px;
+        border-bottom: 1px solid #e5e5e5;
+        width: 100%;
+    }
+    .container__slider {
+        padding-top: calc(var(--header-height) + 50px);
     }
 }
 
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
     .hide-on-tablet {
-
+        display: none;
+    }
+    .header-wrap {
+        width: 600px;
+    }
+    .slider-inside__img {
+        width: 274px;
     }
 }
 
 /* mobile */
 @media (max-width: 739px) {
     .hide-on-mobile {
-        
+        display: none;
+    }
+    .wide {
+        width: 300px;
+    }
+    .header-wrap {
+        width: 300px;
     }
 }
