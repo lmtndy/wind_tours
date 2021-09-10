@@ -84,7 +84,7 @@ html {
     font-size: 4rem;
     line-height: 4rem;
     color: var(--text-color);
-    margin-bottom: 15px;
+    margin: 20px 0;
 }
 
 .section__heading.section__heading--size-l {
