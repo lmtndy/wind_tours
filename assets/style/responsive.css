@@ -6,12 +6,13 @@
     :root {
         --header-height: 69px;
     }
+    /* Header */
     .header {
         position: fixed;
         background-color: var(--primary-color);
         left: 0;
         right: 0;
-        z-index: 1;
+        z-index: 10;
     }
     .header-wrap {
         justify-content: space-between;
@@ -33,6 +34,7 @@
     .header__logo {
         display: block;
     }
+    /* Navbar */
     .navbar__list {
         position: relative;
         display: none;
@@ -75,8 +77,12 @@
         border-bottom: 1px solid #e5e5e5;
         width: 100%;
     }
+    /* Container */
     .container__slider {
         padding-top: calc(var(--header-height) + 50px);
+    }
+    .container__popular {
+        padding-top: 70px;
     }
 }
 
@@ -85,11 +91,20 @@
     .hide-on-tablet {
         display: none;
     }
+    /* Header */
     .header-wrap {
         width: 600px;
     }
+    /* Container */
     .slider-inside__img {
         width: 274px;
+    }
+    .tour-category__img-single {
+        height: 600px;
+    }
+    .popular-2__img {
+        width: 64%;
+        padding: 64px 0 0;
     }
 }
 
@@ -101,7 +116,75 @@
     .wide {
         width: 300px;
     }
+    /* header */
     .header-wrap {
         width: 300px;
+    }
+    .navbar__list {
+        position: fixed;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        right: 0;
+        background-color: #fff;
+        padding: 0 calc((100% - 300px) /2);
+    }
+    /* Container */
+    .slider-inside__img {
+        left: 12%;
+        width: 237px;
+    }
+    .slider-small {
+        padding-top: 30px;
+    }
+    .popular__img {
+        width: 88%;
+    }
+    .container__video {
+        margin-top: 120px;
+    }
+    .section__heading.section__heading--size-l {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+    .section__description {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+    .container__introduce {
+        margin-top: 100px;
+    }
+    .container__video {
+        margin-top: 90px;
+    }
+    .video__btn {
+        width: 45px;
+        height: 45px;
+        top: 74%;
+        left: 52%;
+    }
+    .popular__content-text {
+        padding-right: 0;
+    }
+    .popular-2__img {
+        padding: 50px 0 0;
+    }
+    .section__heading {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    .section__description {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .tour-category__img-single {
+        height: 477px;
+    }
+    .popular-2__img {
+        padding: 40px 0 0;
     }
 }

@@ -80,6 +80,10 @@ html {
     transition: background-color ease 0.3s;
 }
 
+.section__content {
+    padding-top: 20px;
+}
+
 .section__heading {
     font-size: 4rem;
     line-height: 4rem;
