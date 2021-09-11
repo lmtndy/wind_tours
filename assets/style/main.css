@@ -1,6 +1,20 @@
-/* .main {
-    overflow: hidden;
-} */
+.main__btn {
+    position: fixed;
+    bottom: 5vh;
+    text-decoration: none;
+    z-index: 10;
+    right: 5vh;
+}
+
+.main__btn-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 .header {
     background-color: #1c1c1c;
 }

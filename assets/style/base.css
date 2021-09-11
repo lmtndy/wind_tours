@@ -71,6 +71,7 @@ html {
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
 }
 
 .btn:hover {
